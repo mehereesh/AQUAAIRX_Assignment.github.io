@@ -1,0 +1,128 @@
+:root {
+    --primary-color: #007BFF;
+    --secondary-color: #6C757D;
+    --background-color: rgba(0, 0, 0, 0.5);
+    --text-color: #ffffff;
+    --border-radius: 8px;
+    --transition-duration: 0.3s;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('giphy.webp') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    opacity: 0.9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 1rem;
+}
+
+.input-group input, .input-group select {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.story {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    display: none;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .input-group label {
+        font-size: 0.9rem;
+    }
+
+    .input-group input, .input-group select {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+
+    .story {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+}

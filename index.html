@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Story Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generate Your Travel Story</h1>
+        <div class="input-group">
+            <label for="user-name">Your Name:</label>
+            <input type="text" id="user-name" placeholder="Enter your name">
+        </div>
+        <div class="input-group">
+            <label for="companion-name">Travel Companion's Name:</label>
+            <input type="text" id="companion-name" placeholder="Enter your companion's name">
+        </div>
+        <div class="input-group">
+            <label for="location">Do you prefer the mountains or the beach?</label>
+            <select id="location">
+                <option value="">Select...</option>
+                <option value="Mountains">Mountains</option>
+                <option value="Beach">Beach</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="activity">Are you looking for adventure or relaxation?</label>
+            <select id="activity">
+                <option value="">Select...</option>
+                <option value="Adventure">Adventure</option>
+                <option value="Relaxation">Relaxation</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="budget">What’s your budget?</label>
+            <select id="budget">
+                <option value="">Select...</option>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+        </div>
+        <button id="generate-btn">Generate Story</button>
+        <div id="story" class="story"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
